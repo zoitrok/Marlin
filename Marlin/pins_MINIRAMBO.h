@@ -89,23 +89,23 @@
 #define SUICIDE_PIN        -1  //PIN that has to be turned on right after start, to keep power flowing.
 
 #ifdef ULTRA_LCD
-  #define KILL_PIN 32
+  #define KILL_PIN -1
   #ifdef NEWPANEL
    //arduino pin which triggers an piezzo beeper
-    #define BEEPER 84      // Beeper on AUX-4
-    #define LCD_PINS_RS 82
-    #define LCD_PINS_ENABLE 18
-    #define LCD_PINS_D4 19
-    #define LCD_PINS_D5 70
-    #define LCD_PINS_D6 85
-    #define LCD_PINS_D7 71
+    #define BEEPER -1      // Beeper on AUX-4
+    #define LCD_PINS_RS 38
+    #define LCD_PINS_ENABLE 5
+    #define LCD_PINS_D4 14
+    #define LCD_PINS_D5 15
+    #define LCD_PINS_D6 32
+    #define LCD_PINS_D7 31
 
     //buttons are directly attached using AUX-2
-    #define BTN_EN1 14
-    #define BTN_EN2 72
-    #define BTN_ENC 9  //the click
+    #define BTN_EN1 80
+    #define BTN_EN2 73
+    #define BTN_ENC 21  //the click
 
-    #define SDCARDDETECT 15
+    #define SDCARDDETECT 72
 
   #endif
 #endif //ULTRA_LCD
